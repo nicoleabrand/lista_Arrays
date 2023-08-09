@@ -4,9 +4,25 @@
     //Retorne os elementos do array, separando-os por hífen (n1 - n2).
 
     //ENTRADA
+    const num1 = Number(prompt(`Insira um número`))
+    const num2 = Number(prompt(`Insira outro número`))
+
+    let array= [];
+    if (num1>num2){
+       array = [num1, num2]
+    }
+    else {
+        array = [num2, num1]
+    }
+    alert(`Os elementos da array são: ${array.join(" - ")}`)
 
 
-    //PROCESSAMENTO
+
+
+
+
+
+
 
 
     //SAÍDA
