@@ -6,7 +6,16 @@
     //Apresente para o usuário se a LETRA que ele quer procurar existe ou não na palavra digitada e qual a primeira posição da LETRA na PALAVRA.
 
     //ENTRADA
+    let palavra = prompt(`Digite uma palavra`)
+    const letra = prompt(`Digite uma letra que deseja encontrar na palavra`)
+    palavra = Array.from(palavra)
 
+    if(palavra.indexOf(letra) >= 0) {
+        alert(`A letra existe na palavra na posição ${palavra.indexOf(letra)}`)
+    }
+    else{
+        alert(`A letra não existe na palavra`)
+    }
 
     //PROCESSAMENTO
 
