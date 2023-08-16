@@ -19,44 +19,36 @@
     const tipo = prompt(`Informe o tipo do primeiro novo veículo a ser adicionado na lista`)
     const tipo2 = prompt(`Informe o tipo do primeiro novo veículo a ser adicionado na lista`)
     const tipo3 = prompt(`Informe o tipo do primeiro novo veículo a ser adicionado na lista`)
-    let mensagemfi = `A nova lista é `
     if (tipo == "Sedan") {
-        carrosSedan = carrosSedan.push(add)
-        mensagemfi += carrosSedan
+        carrosSedan.push(add)
     }
     else if (tipo2 == "Sedan") {
-        carrosSedan = carrosSedan.push(add2)
-        mensagemfi += carrosSedan
+        carrosSedan.push(add2)
     }
     else if (tipo3 == "Sedan") {
-        carrosSedan = carrosSedan.push(add3)
-        mensagemfi += carrosSedan
+        carrosSedan.push(add3)
     }
     else if (tipo == "SUV") {
-        carrosSUV = carrosSUV.push(add)
-        mensagemfi += carrosSUV
+        carrosSUV.push(add)
     }
     else if (tipo2 == "SUV") {
-        carrosSUV = carrosSUV.push(add2)
-        mensagemfi += carrosSUV
+        carrosSUV.push(add2)
     }
     else if (tipo3 == "SUV") {
-        carrosSUV = carrosSUV.push(add3)
-        mensagemfi += carrosSUV
+        carrosSUV.push(add3)
     }
     else if (tipo == "Hatch") {
-        carrosHatch = carrosHatch.push(add)
-        mensagemfi += carrosHatch
+        carrosHatch.push(add)
     }
     else if (tipo2 == "Hatch") {
-        carrosHatch = carrosHatch.push(add2)
-        mensagemfi += carrosHatch
+        carrosHatch.push(add2)
     }
     else if (tipo3 == "Hatch") {
-        carrosHatch = carrosHatch.push(add3)
-        mensagemfi += carrosHatch
+        carrosHatch.push(add3)
     }
-    alert(mensagemfi)
+    alert(`Carros Sedan: ${carrosSedan.join(", ")} \n
+           Carros SUV: ${carrosSUV.join(", ")} \n
+           Carros Hatch: ${carrosHatch.join(", ")}`);
 
     //PROCESSAMENTO
 
