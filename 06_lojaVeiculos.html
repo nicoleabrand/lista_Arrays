@@ -16,18 +16,44 @@
     const add = prompt(`Informe o novo veículos a ser adicionados na lista`)
     const add2 = prompt(`Informe o novo veículos a ser adicionados na lista`)
     const add3 = prompt(`Informe o novo veículos a ser adicionados na lista`)
-    const tipo = prompt(`Informe o tipo dos novos veículos a serem adicionados na lista`)
+    const tipo = prompt(`Informe o tipo do primeiro novo veículo a ser adicionado na lista`)
+    const tipo2 = prompt(`Informe o tipo do primeiro novo veículo a ser adicionado na lista`)
+    const tipo3 = prompt(`Informe o tipo do primeiro novo veículo a ser adicionado na lista`)
     let mensagemfi = `A nova lista é `
-    if (tipo == "Sedan") {
-        carrosSedan = carrosSedan.push(add, add2, add3)
+    if (tipo1 == "Sedan") {
+        carrosSedan = carrosSedan.push(add)
+        mensagemfi += carrosSedan
+    }
+    else if (tipo2 == "Sedan") {
+        carrosSedan = carrosSedan.push(add2)
+        mensagemfi += carrosSedan
+    }
+    else if (tipo3 == "Sedan") {
+        carrosSedan = carrosSedan.push(add3)
         mensagemfi += carrosSedan
     }
     else if (tipo == "SUV") {
-        carrosSUV = carrosSUV.push(add, add2, add3)
+        carrosSUV = carrosSUV.push(add)
+        mensagemfi += carrosSUV
+    }
+    else if (tipo2 == "SUV") {
+        carrosSUV = carrosSUV.push(add2)
+        mensagemfi += carrosSUV
+    }
+    else if (tipo3 == "SUV") {
+        carrosSUV = carrosSUV.push(add3)
         mensagemfi += carrosSUV
     }
     else if (tipo == "Hatch") {
-        carrosHatch = carrosHatch.push(add, add2, add3)
+        carrosHatch = carrosHatch.push(add)
+        mensagemfi += carrosHatch
+    }
+    else if (tipo2 == "Hatch") {
+        carrosHatch = carrosHatch.push(add2)
+        mensagemfi += carrosHatch
+    }
+    else if (tipo3 == "Hatch") {
+        carrosHatch = carrosHatch.push(add3)
         mensagemfi += carrosHatch
     }
     alert(mensagemfi)
