@@ -13,19 +13,21 @@
     let carrosSUV = ["Tiggo", "Sportage", "Tucson", "Ecosport"];
     let carrosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
     let carrosHatch = ["308", "Focus", "i30"]
-    const add = prompt(`Informe 3 novos veículos a serem adicionados na lista`)
+    const add = prompt(`Informe o novo veículos a ser adicionados na lista`)
+    const add2 = prompt(`Informe o novo veículos a ser adicionados na lista`)
+    const add3 = prompt(`Informe o novo veículos a ser adicionados na lista`)
     const tipo = prompt(`Informe o tipo dos novos veículos a serem adicionados na lista`)
     let mensagemfi = `A nova lista é `
     if (tipo == "Sedan") {
-        carrosSedan = carrosSedan.push(carros)
+        carrosSedan = carrosSedan.push(add, add2, add3)
         mensagemfi += carrosSedan
     }
     else if (tipo == "SUV") {
-        carrosSUV = carrosSUV.push(carros)
+        carrosSUV = carrosSUV.push(add, add2, add3)
         mensagemfi += carrosSUV
     }
     else if (tipo == "Hatch") {
-        carrosHatch = carrosHatch.push(carros)
+        carrosHatch = carrosHatch.push(add, add2, add3)
         mensagemfi += carrosHatch
     }
     alert(mensagemfi)
