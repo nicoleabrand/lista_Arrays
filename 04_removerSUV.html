@@ -8,21 +8,10 @@
     //ENTRADA
     let carrosSUV = ["Tiggo", "Sportage", "Tucson", "Ecosport"];
     let remover = prompt(`Qual carro deseja remover da lista?`)
-    let mensagemfi = `A lista antiga é ${carrosSUV} `
-    if (remover=="Tiggo"){
-        mensagemfi+= `e a nova é Sportage, Tucson e Ecosport`
-    }
-    else if (remover="Sportage") {
-        mensagemfi+= `e a nova é Tiggo, Tucson, Ecosport`
-    }
-    else if (remover="Tucson") {
-        mensagemfi+= `e a nova é Tiggo, Sportage, Ecosport`
-    }
-    else {   
-        mensagemfi+= `e a nova é Tiggo, Sportage, Tucson`
-    }
-    alert(mensagemfi)
-    
+    const posicao = carrosSUV.indexOf(remover)
+    alert(`A lista antiga é ${carrosSUV.join(", ")} `)
+    carrosSUV.splice(posicao, 1)
+    alert(`A lista nova é ${carrosSUV.join(", ")} `)
 
     //PROCESSAMENTO
 
